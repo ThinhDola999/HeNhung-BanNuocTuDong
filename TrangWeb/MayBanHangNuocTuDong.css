@@ -1,0 +1,174 @@
+/* Reset CSS */
+ /* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* Basic styling for the body */
+.MayBanHang {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8; /* Màu nền sáng */
+}
+
+/* Styling for the header */
+.logo-icon {
+    position: sticky;
+    top:0px;
+    background-color: #6bda90;
+    /* color: #ffffff; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: solid 1px #d9caca;
+    z-index: 2;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+}
+
+/* Styling for the logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    /* margin-top: px; */
+}
+
+/* Styling for the user icon */
+.user-icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.user-icon i{
+    color: #f8f8f8;
+}
+
+/* Styling for the aside (menu) */
+aside {
+    position: sticky;
+    top: 10px;
+    background-color: #ebf4e9; 
+    /* color: #e2a1a1; */
+    /* position: absolute;
+    z-index: 2; */
+    width: 60px;
+    height: 100%;
+    position: fixed;
+    /* top: 0; */
+    /* left: -70px; */
+    /* transition: left 0.3s; */
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+    border-right: solid 1px #ebf4e9; ;
+    /* margin: auto; */
+    /* overflow: hidden; */
+    
+    /* text-align: center; */
+}
+
+/* Styling for the navigation menu */
+nav ul {
+    list-style-type: none;
+   
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    color: #1f1c1c;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    transition: background-color 0.2s;
+    display: flex;
+    
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: -40px;
+    /* margin:0; */
+
+    /* flex-direction: row-reverse; */
+    
+}
+nav ul li a i{
+   margin-right: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #6bda90;
+    color: #f8f8f8;
+}
+
+/* Styling for the menu icon */
+.icon-menu {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #54525213; /* Màu nền của biểu tượng menu */
+    color: #1e1b1b;
+    /* text-align: center; */
+    font-size: 20px;
+    margin-left: 10px;
+    /* margin: auto; */
+    margin-top: 50px;
+    border-radius: 5px;
+
+    /* padding: 8px; */
+}
+
+.icon-menu:hover{
+    background-color: #6bda90;
+    color: #f8f8f8;
+}
+
+
+nav ul li a p{
+    /* margin-left: 10px; */
+    margin: auto;
+    display: none; /* Ẩn biểu tượng */
+}
+
+
+aside.menu-collapsed {
+    width: 220px;
+}
+
+aside.menu-collapsed nav ul li a p{
+    display: block; /* Ẩn biểu tượng */
+}
+
+/* Add your own styling for the main content */
+
+.than{
+   
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+
+.hien_thi_trang {
+    flex-grow: 1;
+    margin-left: 70px; 
+    padding-bottom: 37px;
+    margin-top: 10px;
+    width: auto;
+    /* background-color: #fff; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+    /* Chiếm khoảng trống còn lại */
+    /* height: 100%;  */
+    display: none;
+    /* overflow: auto;  */
+
+}
+
+.MayBanHang .logo-icon .logo img{
+
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
+    margin-top:2px;
+    margin-bottom: -4px;
+    margin-left: 8px;
+   
+
+}

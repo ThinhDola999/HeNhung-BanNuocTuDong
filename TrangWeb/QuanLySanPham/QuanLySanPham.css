@@ -1,0 +1,430 @@
+
+
+
+.h1-sanpham{
+    background:#00C853;
+    color:#f0eded;
+    /* margin:auto; */
+    /* width: 1535px; */
+    text-align: center;
+}
+.SanPham{
+
+    /* margin: 200px; */
+    /* padding-left: 30px;
+    padding-top: 80px;
+    padding-right: 100px; */
+    padding-left: 10px;
+    padding-right: 50px;
+    padding-top: 0px;
+    /* margin-left: 100px; */
+    /* margin-right: 300px; */
+    /* width: 100%; */
+    /* background-color: #f2f2f2; */
+    font-family: Arial, sans-serif;
+    /* padding: 30px; */
+
+}
+
+.container {
+    display: flex;
+    /* justify-content:space-around; */
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    background-color: #fff;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+   
+    border-radius: 5px;
+    height:100vh;
+    /* overflow: hidden; */
+}
+
+.product-list {
+    /* flex: 1; */
+    padding: 20px;
+    overflow: hidden;
+    /* overflow-x: auto */
+    width: 100%;
+    max-height: 800px;
+    display: grid;
+    grid-template-columns: repeat(4, 0.4fr); /* Tạo 4 cột bằng nhau */
+    grid-gap: 30px; 
+    /* grid-row-gap: -40px; */
+}
+
+.product-list:hover{
+    overflow: auto;
+}
+/* Hiển thị thanh cuộn */
+.product-list::-webkit-scrollbar {
+    width: 10px; /* Độ rộng của thanh cuộn */
+    height:10px;
+}
+
+/* Màu nền của thanh cuộn */
+.product-list::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Màu của phần cuộn */
+.product-list::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px; 
+   
+}
+
+/* Màu khi hover qua thanh cuộn */
+.product-list::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    cursor: pointer; /* Đổi con trỏ chuột khi hover */
+}
+.product-item {
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex-direction:row;  */
+    /* align-items: center; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    /* background:#ceb7a8; */
+    width: 190px;
+    height: 305px;
+    /* border: solid 1px  */
+
+}
+
+
+.product-image {
+    position: relative;
+}
+
+.product-item .product-content .product-image img {
+    width: 150px;
+    height: 200px;
+    /* margin-right: 10px; */
+    border: 1px solid #a1cda3;
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+.product-item .product-content .product-image .product-id {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: #f00;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.product-item .product-content {
+
+    align-items: center;
+
+    display:flex;
+    flex-direction:column; 
+    /* margin:auto; */
+
+    /* flex: 1; */
+}
+
+
+.product-item .product-content .product-info p {
+    /* flex: 1; */
+    /* margin:auto; */
+    text-align: center;
+    margin-top: 8px;
+    /* margin-bottom: 4px; */
+    /* margin:auto */
+    
+   
+}
+
+
+.product-item .product-content .product-info {
+
+    margin-top: -5px;
+    /* height: 60px; */
+    /* align-items: center; */
+    
+   
+}
+
+.product-item .product-content .product-info .product-name {
+    font-weight: bold;
+    /* margin-bottom: 5px; */
+    /* align-items: center; */
+    /* margin:auto; */
+    
+   
+}
+
+.product-item .product-content .product-info .product-price  {
+    color: #ff6600;
+    font-weight: bold;
+    /* margin-bottom: 5px; */
+    /* align-items: center; */
+    /* margin:auto; */
+    /* background:#efe1d7;; */
+}
+
+.product-item .product-content .product-info .product-stock {
+    font-size: 14px;
+    display: flex;
+   /* text-align: center; */
+    font-size: 14px;
+    color: #f0eded;
+    margin-top: 0px;
+    border: 1px solid #a1cda3;
+    border-radius: 0px 0px 5px 5px;
+    
+
+}
+
+
+
+.product-item .product-content .product-info .product-stock .quantity-bar {
+    /* width: 200px; */
+    width: 150px;
+    height: 20px;
+    background-color: #d3e7c9;
+    border-radius: 0px 0px 5px 5px;
+    /* margin-right: 10px; */
+    
+    position: relative;
+}
+
+.product-item .product-content .product-info .product-stock .quantity-remaining {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #00C853; /* Màu của thanh hiển thị số lượng còn lại */
+    position: relative;
+    font-weight: bold;
+    border-radius: 0px 5px 5px 5px;
+}
+
+.product-item .product-content .product-info .product-stock .quantity-remaining::before {
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Màu của số lượng còn lại */
+    font-size: calc(10px);
+}
+
+
+.product-item .product-actions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 10px;
+   
+}
+
+
+.product-item .product-actions .edit-button,
+.product-item .product-actions .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    margin-left: 10px;
+    color: #333;
+}
+
+.summary {
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    
+
+}
+
+.summary  span{
+    color:#ff6600
+}
+
+
+.total-quantity i,
+.total-revenue i,
+.total-price i {
+    /* margin-right: 10px; */
+    color:#292624;
+   
+    margin-top: 30px;
+
+
+}
+
+
+.total-quantity ,
+.total-revenue ,
+.total-price {
+    width: 300px;
+    height: 190px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    background:#d3edde;
+    /* margin: auto; */
+    
+
+}
+
+
+
+
+.add-product {
+    position: absolute;
+    top: 120px;
+    left: 73%;
+    background-color: #007BFF;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+#edit-form {
+    display: none; /* Ẩn form ban đầu */
+    max-width: 400px; /* Đặt chiều rộng tối đa cho form */
+    margin: 0 auto; /* Căn giữa form trên trang */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 400px;
+    left: 100px;
+}
+
+#edit-form input[type="text"],
+#edit-form input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#edit-form input[type="file"] {
+    /* Tùy chỉnh giao diện cho trường đầu vào loại file (nếu cần) */
+    /* Ví dụ: */
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* #edit-form img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+} */
+
+#edit-form button {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#edit-form button:hover {
+    background-color: #0056b3;
+}
+#image{
+    width:50px;
+    height: 50px;
+}
+
+
+#add-form {
+    display: none; /* Ẩn form ban đầu */
+    max-width: 400px; /* Đặt chiều rộng tối đa cho form */
+    margin: 0 auto; /* Căn giữa form trên trang */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 400px;
+    left: 100px;
+}
+
+#add-form input[type="text"],
+#add-form input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#add-form input[type="file"] {
+    /* Tùy chỉnh giao diện cho trường đầu vào loại file (nếu cần) */
+    /* Ví dụ: */
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* #edit-form img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+} */
+
+#add-form button {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#add-form button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button :hover{
+
+     color:#00C853;
+
+}
+
+
+.edit-button :hover{
+
+    color:#00C853;
+
+}

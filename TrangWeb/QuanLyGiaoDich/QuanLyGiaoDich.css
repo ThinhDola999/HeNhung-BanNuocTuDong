@@ -1,0 +1,300 @@
+/* Reset CSS */
+ /* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  
+} */
+
+.h1-GiaoDich{
+    background:#00C853;
+    color:#f0eded;
+    margin:auto;
+    text-align: center;
+    width: 100%;
+}
+.GiaoDich {
+
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  
+  
+}
+
+/* Header Styles */
+.thoiGian{
+  /* background-color: #333; */
+  color: #322a2a;
+  padding: 5px;
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.date-filter {
+  float: right;
+  margin-right: 20px;
+}
+
+.date-filter i {
+    margin-right: 5px;
+}
+
+/* Summary Section Styles */
+.summary {
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 20px;
+  background-color: #caf1d1;
+}
+ 
+#tong_doanh_thu, #tong_hoa_don, #so_du{
+    font-weight:bold;
+}
+.box {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 20em;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.box i {
+    font-size: 24px;
+    margin-top: 7px;
+    display: block;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Custom Search Styles */
+.custom-search {
+    /* text-align: right; */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 25px;
+   
+}
+
+.custom-search .tim_kiem{
+
+    display:flex;
+}
+
+.custom-search .tim_kiem button{
+
+    margin: auto;
+    height:35px;
+}
+.custom-search .show_danh_sach{
+    display:flex;
+    justify-content: center;
+
+}
+
+.custom-search .show_danh_sach .danh_sach{
+   
+    margin-left: -20px;
+
+}
+
+
+.custom-search #show-entries {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   
+    width: 4em;
+    margin-left: 10px;
+    margin-right: 27px;
+    margin-top: 10px;
+    height: 35px;
+}
+
+.custom-search #search {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 17px;
+    width: 20em;
+    height: 35px;
+  
+}
+
+
+/* Table Styles */
+.transaction-history {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.transaction-history th, .transaction-history td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    font-size: 1em;
+}
+
+
+ /*Pagination Styles */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination i {
+    font-size: 12px;
+    /* margin: 0 10px; */
+    cursor: pointer;
+    padding: 0px;
+    font-weight: bold;
+    
+}
+
+.pagination button{
+
+    background-color: #e7edf3;
+    color: #393535;
+    border: solid 1px rgb(214, 230, 235);
+}
+
+.pagination button:hover {
+  
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+   
+}
+.pagination a {
+   
+    font-size: 12px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 3px;
+    margin-right: 3px;
+    border: solid 1px rgb(214, 230, 235);
+    
+}
+
+
+.pagination a:hover {
+  
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+   
+}
+
+.trang-hien-tai{
+
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+
+}
+
+.danhSachGiaoDich {
+    /* width: 120%; Đảm bảo rằng div có đủ chiều rộng để hiển thị nội dung */
+    max-height: 600px; /* Đặt chiều cao tối đa cho div, bạn có thể thay đổi giá trị này theo ý muốn */
+    /* overflow: auto; Kích hoạt thanh trượt dọc khi nội dung vượt ra ngoài */
+    overflow: hidden; /* Ẩn thanh trượt ban đầu */
+    position: relative;
+    /* max-width: 900px; */
+
+}
+
+.danhSachGiaoDich table {
+    width: 100%;
+}
+
+/* Cố định phần thead khi cuộn */
+.danhSachGiaoDich table thead {
+    position: sticky;
+    top: -1px;
+    background-color: #caf0d6; /* Màu nền của phần thead */
+}
+
+/* Tạo viền cho phần thead */
+.danhSachGiaoDich table th {
+    border: 1px solid #ccc;
+    /* padding: 8px; */
+}
+
+.danhSachGiaoDich table tbody tr {
+    height: 20px;
+}
+
+.danhSachGiaoDich table tbody img {
+    height: 40px;
+    width: 40px;
+}
+
+.danhSachGiaoDich table tbody button {
+    margin-right: 7px;
+    margin-top: 7px;
+}
+
+.danhSachGiaoDich:hover {
+    overflow: auto; /* Hiển thị thanh trượt khi hover */
+}
+.danhSachGiaoDich::-webkit-scrollbar {
+    height:8px;
+    width: 8px; /* Độ rộng của thanh trượt */
+}
+
+/* Nền thanh trượt */
+.danhSachGiaoDich::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* Màu nền của thanh trượt */
+}
+
+/* Nút cuộn */
+.danhSachGiaoDich::-webkit-scrollbar-thumb {
+    background-color: #888; /* Màu nền của nút cuộn */
+    border-radius: 4px; /* Độ cong viền của nút cuộn */
+}
+
+/* Hiển thị màu sắc khác khi hover vào nút cuộn */
+.danhSachGiaoDich::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+#bieu_do {
+   
+    background-color: #1412122d;
+    border: 1px solid #ccc; /* Viền */
+    padding: 10px; /* Khoảng cách giữa nội dung và viền (tăng khoảng cách lên để nội dung trông phẳng hơn) */
+    width: 900px; 
+    height: 350px;
+    margin-top: -100px;
+    font-size: 16px; /* Cỡ chữ */
+    color: #333; /* Màu chữ */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: none;
+    position:absolute;
+    margin-left: 100px;
+    z-index: 2;
+
+
+  }
